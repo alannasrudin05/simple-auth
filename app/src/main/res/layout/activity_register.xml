@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/arrow_left"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#1E608B"
+                android:layout_gravity="center"
+                android:padding="10dp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="400dp">
+
+
+            <TextView
+                android:id="@+id/notif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@color/green"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:visibility="gone"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hacker"
+                android:paddingVertical="40dp"
+                />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="60dp"
+                android:hint="email"
+                android:drawableLeft="@drawable/mail"
+                android:drawablePadding="10dp"
+                android:background="@drawable/edittext_underline"
+                android:layout_marginBottom="20dp"
+                android:inputType="textEmailAddress"
+                />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="60dp"
+                android:hint="username"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="10dp"
+                android:background="@drawable/edittext_underline"
+                android:layout_marginBottom="20dp"
+                />
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="60dp"
+                android:hint="password"
+                android:drawableLeft="@drawable/lock"
+                android:drawablePadding="10dp"
+                android:background="@drawable/edittext_underline"
+                android:inputType="textPassword"
+                />
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50dp"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:letterSpacing="0.20"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/primary"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="or"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:gravity="center"
+
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_login"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50dp"
+                android:letterSpacing="0.20"
+                android:text="Login"
+                android:textColor="@color/primary"
+                android:textSize="16sp"
+                app:cornerRadius="50dp"
+                app:materialButtonStyle="@style/MyButtonStyle"
+                app:strokeColor="@color/primary"
+                app:strokeWidth="2dp" />
+
+        </LinearLayout>
+
+</ScrollView>
+
+
+
+
+
+</LinearLayout>
